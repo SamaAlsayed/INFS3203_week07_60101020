@@ -1,0 +1,36 @@
+Unit Test Plan:
+
+Test Case 1: Creating an Employee
+Description: Verify that an employee can be successfully created and added to the system.
+Inputs: Employee name, age, ID, department
+Expected Output: Employee is added to the system
+
+Test Case 2: Retrieving an Employee by ID
+Description: Verify that an employee can be retrieved from the system by their ID.
+Inputs: Employee ID
+Expected Output: Employee object with the specified ID is returned
+
+Test Case 3: Deleting an Employee by ID
+Description: Verify that an employee can be successfully deleted from the system by their ID.
+Inputs: Employee ID
+Expected Output: Employee with the specified ID is removed from the system
+
+Integration Test Plan:
+Test Case 1: Creating and Retrieving an Employee
+Description: Verify that an employee can be created and then retrieved from the system.
+Steps:
+Create a new employee.
+Retrieve the employee by their ID.
+Expected Output: The retrieved employee matches the one that was created.
+
+Test Case 2: Creating and Deleting an Employee
+Description: Verify that an employee can be created and then deleted from the system.
+Steps:
+Create a new employee.
+Delete the employee by their ID.
+Expected Output: The employee is no longer present in the system.
+
+Test Case 3: Retrieving a Non-existent Employee
+Description: Verify that attempting to retrieve an employee with an invalid ID returns None.
+Inputs: Invalid employee ID
+Expected Output: None is returned, indicating that the employee does not exist in the system.
